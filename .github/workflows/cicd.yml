@@ -46,7 +46,7 @@ jobs:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           application_name: boot3app
-          environment_name: boo3app-env
+          environment_name: boot3app-env
           version_label: github-action-${{steps.current-time.outputs.formattedTime}}
           region: us-east-1
           deployment_package: ./build/libs/${{env.artifact}}
