@@ -1,4 +1,14 @@
 spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: test
+            client-secret: test
+            scope:
+              - email
+              - profile
   datasource:
     url: jdbc:h2:mem:testdb
     username: sa
@@ -13,3 +23,6 @@ spring:
     defer-datasource-initialization: true
   profiles:
     include: db, security
+jwt:
+  issuer: test
+  secret_key: test
