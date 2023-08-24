@@ -1,6 +1,6 @@
 # 워크플로우 이름 지정
 name: CI/CD
-
+run-name: Deploy to ${{ inputs.deploy_target }} by @${{ github.actor }}
 # 워크플로우가 시작될 조건 지정
 on:
   push:
