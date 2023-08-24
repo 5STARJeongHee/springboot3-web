@@ -49,3 +49,4 @@ jobs:
           environment_name: Boo3app-env
           version_label: github-action-${{steps.current-time.outputs.formattedTime}}
           region: us-east-1
+          deployment_package: ./build/libs/${{env.artifact}}
