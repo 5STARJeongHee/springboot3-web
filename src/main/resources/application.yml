@@ -22,7 +22,7 @@ spring:
         format_sql: true
     defer-datasource-initialization: true
   profiles:
-    include: db, security
+    include: security, db
 jwt:
   issuer: test
   secret_key: test
